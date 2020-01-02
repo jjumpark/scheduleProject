@@ -1,0 +1,14 @@
+{% extends 'todo_main/common/header.html' %}
+{% load staticfiles %}
+{% block main %}
+
+<div class="col-md-12">
+    <div class="container">
+        <h1>HOME</h1>
+        {% for list in todo_list %}
+            {{ list.title }} <br>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock main %}
